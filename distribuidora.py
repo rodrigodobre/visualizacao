@@ -36,11 +36,11 @@ f.subplots_adjust(wspace=0.5, hspace=1)
 
 plt.subplot(1,2,1)
 plt.barh(a['nome'][:10],a['review_score'][:10], color=colors)
-plt.title('Review')
+plt.title('Avaliações')
 plt.xticks(rotation=45,ha='right', size=8)
 plt.yticks(size=8)
 
-red = list(Color("red").range_to(Color("red"),1))
+red = list(Color("#000000").range_to(Color("#000000"),1))
 cinza = list(Color("grey").range_to(Color("grey"), 3))
 green = list(Color("blue").range_to(Color("blue"),1))
 colors = red + cinza + green
